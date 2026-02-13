@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/inner_strip",
+    "textures": {
+        "bottom": "hydronyasama:block/plazza_floor",
+        "top": "hydronyasama:block/plazza_floor",
+        "side": "hydronyasama:block/plazza_floor"
+    }
+}
+
+

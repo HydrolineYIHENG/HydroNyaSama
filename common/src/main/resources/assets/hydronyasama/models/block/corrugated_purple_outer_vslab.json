@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/outer_vslab",
+    "textures": {
+        "bottom": "hydronyasama:block/corrugated_purple",
+        "top": "hydronyasama:block/corrugated_purple",
+        "side": "hydronyasama:block/corrugated_purple"
+    }
+}
+
+

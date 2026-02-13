@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "hydronyasama:block/white_brick_wall",
+        "pane": "hydronyasama:block/white_brick_wall"
+    }
+}
+

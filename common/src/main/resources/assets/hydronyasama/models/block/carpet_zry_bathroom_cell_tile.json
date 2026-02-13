@@ -1,0 +1,8 @@
+{
+    "parent": "block/carpet",
+    "textures": {
+        "particle": "hydronyasama:block/zry_bathroom_cell_tile",
+        "wool": "hydronyasama:block/zry_bathroom_cell_tile"
+    }
+}
+

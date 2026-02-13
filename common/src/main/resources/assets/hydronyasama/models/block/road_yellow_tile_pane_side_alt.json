@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "hydronyasama:block/road_yellow_tile",
+        "pane": "hydronyasama:block/road_yellow_tile"
+    }
+}
+

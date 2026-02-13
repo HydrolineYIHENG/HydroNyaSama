@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "hydronyasama:block/asphalt",
+        "pane": "hydronyasama:block/asphalt"
+    }
+}
+

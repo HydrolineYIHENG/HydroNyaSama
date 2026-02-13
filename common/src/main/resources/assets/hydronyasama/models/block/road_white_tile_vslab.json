@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/vslab",
+    "textures": {
+        "bottom": "hydronyasama:block/road_white_tile",
+        "top": "hydronyasama:block/road_white_tile",
+        "side": "hydronyasama:block/road_white_tile"
+    }
+}
+
+

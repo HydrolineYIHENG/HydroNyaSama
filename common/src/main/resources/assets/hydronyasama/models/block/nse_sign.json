@@ -1,0 +1,7 @@
+{
+    "textures":  {
+                     "all":  "hydronyasama:block/nse_sign"
+                 },
+    "parent":  "block/cube_all"
+}
+

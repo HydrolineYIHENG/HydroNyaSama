@@ -1,0 +1,41 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "texture": "hydronyasama:block/corrugated_orange"
+        },
+        "model": "hydronyasama:block/base/railing_post"
+    },
+    "variants": {
+    "normal": [{}],
+    "inventory": [{
+        "model": "hydronyasama:block/base/railing_inventory"
+    }],
+    "up": {
+        "true": { "submodel": { "up": { "model": "hydronyasama:block/base/railing_post_top" } } },
+        "false": {  }
+    },
+    "down": {
+        "true": { "submodel": { "down": { "model": "hydronyasama:block/base/railing_post_bottom" } } },
+        "false": {  }
+    },
+    "north": {
+        "true": { "submodel": { "north": { "model": "hydronyasama:block/base/railing_side", "uvlock": true } } },
+        "false": {  }
+    },
+    "south": {
+        "true": { "submodel": { "south": { "model": "hydronyasama:block/base/railing_side", "y": 180, "uvlock": true } } },
+        "false": {  }
+    },
+    "west": {
+        "true": { "submodel": { "west": { "model": "hydronyasama:block/base/railing_side", "y": 270, "uvlock": true } } },
+        "false": {  }
+    },
+    "east": {
+        "true": { "submodel": { "east": { "model": "hydronyasama:block/base/railing_side", "y": 90, "uvlock": true } } },
+        "false": {  }
+    }
+    }
+}
+
+

@@ -1,0 +1,9 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "hydronyasama:block/marble",
+        "top": "hydronyasama:block/marble",
+        "side": "hydronyasama:block/marble"
+    }
+}
+

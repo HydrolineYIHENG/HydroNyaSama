@@ -1,0 +1,7 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "hydronyasama:block/concrete_brick_wall"
+    }
+}
+

@@ -1,0 +1,7 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "hydronyasama:block/coarse_concrete_floor"
+    }
+}
+

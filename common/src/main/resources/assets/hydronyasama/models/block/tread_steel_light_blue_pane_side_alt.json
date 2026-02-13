@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "hydronyasama:block/tread_steel_light_blue",
+        "pane": "hydronyasama:block/tread_steel_light_blue"
+    }
+}
+

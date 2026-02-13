@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/inner_strip",
+    "textures": {
+        "bottom": "hydronyasama:block/concrete_rail_tunnel_up",
+        "top": "hydronyasama:block/concrete_rail_tunnel_up",
+        "side": "hydronyasama:block/concrete_rail_tunnel_up"
+    }
+}
+
+

@@ -1,0 +1,7 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "hydronyasama:block/latex_painted_wall"
+    }
+}
+

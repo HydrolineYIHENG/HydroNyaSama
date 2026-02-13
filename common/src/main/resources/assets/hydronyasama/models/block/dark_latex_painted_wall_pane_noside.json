@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_noside",
+    "textures": {
+        "pane": "hydronyasama:block/dark_latex_painted_wall"
+    }
+}
+

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "half=bottom": { "model": "hydronyasama:block/half_slab_coarse_concrete_floor" },
+        "half=top": { "model": "hydronyasama:block/upper_slab_coarse_concrete_floor" }
+    }
+}
+
+

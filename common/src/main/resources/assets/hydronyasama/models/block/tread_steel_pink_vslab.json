@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/vslab",
+    "textures": {
+        "bottom": "hydronyasama:block/tread_steel_pink",
+        "top": "hydronyasama:block/tread_steel_pink",
+        "side": "hydronyasama:block/tread_steel_pink"
+    }
+}
+
+

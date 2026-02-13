@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_post",
+    "textures": {
+        "edge": "hydronyasama:block/plazza_floor",
+        "pane": "hydronyasama:block/plazza_floor"
+    }
+}
+

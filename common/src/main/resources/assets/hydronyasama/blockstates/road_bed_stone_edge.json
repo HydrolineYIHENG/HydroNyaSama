@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "top": "hydronyasama:block/road_bed_stone",
+      "side": "hydronyasama:block/road_bed_stone",
+      "bottom": "hydronyasama:block/road_bed_stone",
+      "face": "hydronyasama:block/road_bed_stone"
+    },
+    "model": "hydronyasama:block/base/edge_tall"
+  },
+  "variants": {
+    "normal": [{}],
+    "facing": {
+      "north": { "y": 90, "uvlock": true },
+      "south": { "y": 270, "uvlock": true },
+      "west": { "uvlock": true },
+      "east": { "y": 180, "uvlock": true }
+    },
+    "half": {
+      "top": { "model": "hydronyasama:block/base/edge_top" },
+      "bottom": { "model": "hydronyasama:block/base/edge_bottom" },
+      "tall": {  }
+    }
+  }
+}
+

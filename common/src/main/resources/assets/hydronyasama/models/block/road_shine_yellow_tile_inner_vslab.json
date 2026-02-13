@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/inner_vslab",
+    "textures": {
+        "bottom": "hydronyasama:block/road_shine_yellow_tile",
+        "top": "hydronyasama:block/road_shine_yellow_tile",
+        "side": "hydronyasama:block/road_shine_yellow_tile"
+    }
+}
+
+

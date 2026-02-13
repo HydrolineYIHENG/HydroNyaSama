@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_post",
+    "textures": {
+        "edge": "hydronyasama:block/corrugated_white",
+        "pane": "hydronyasama:block/corrugated_white"
+    }
+}
+

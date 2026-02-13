@@ -1,0 +1,8 @@
+{
+    "parent": "block/carpet",
+    "textures": {
+        "particle": "hydronyasama:block/oblique_paving_brick",
+        "wool": "hydronyasama:block/oblique_paving_brick"
+    }
+}
+

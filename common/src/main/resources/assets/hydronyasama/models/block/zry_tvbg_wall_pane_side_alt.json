@@ -1,0 +1,8 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "hydronyasama:block/zry_tvbg_wall",
+        "pane": "hydronyasama:block/zry_tvbg_wall"
+    }
+}
+

@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/vslab",
+    "textures": {
+        "bottom": "hydronyasama:block/grey_brick",
+        "top": "hydronyasama:block/grey_brick",
+        "side": "hydronyasama:block/grey_brick"
+    }
+}
+
+

@@ -1,0 +1,9 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "hydronyasama:block/white_brick_wall",
+        "top": "hydronyasama:block/white_brick_wall",
+        "side": "hydronyasama:block/white_brick_wall"
+    }
+}
+

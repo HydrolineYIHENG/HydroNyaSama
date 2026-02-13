@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "top": "hydronyasama:block/concrete_rail_tunnel_down",
+      "side": "hydronyasama:block/concrete_rail_tunnel_down",
+      "bottom": "hydronyasama:block/concrete_rail_tunnel_down",
+      "face": "hydronyasama:block/concrete_rail_tunnel_down"
+    },
+    "model": "hydronyasama:block/base/edge_tall"
+  },
+  "variants": {
+    "normal": [{}],
+    "facing": {
+      "north": { "y": 90, "uvlock": true },
+      "south": { "y": 270, "uvlock": true },
+      "west": { "uvlock": true },
+      "east": { "y": 180, "uvlock": true }
+    },
+    "half": {
+      "top": { "model": "hydronyasama:block/base/edge_top" },
+      "bottom": { "model": "hydronyasama:block/base/edge_bottom" },
+      "tall": {  }
+    }
+  }
+}
+

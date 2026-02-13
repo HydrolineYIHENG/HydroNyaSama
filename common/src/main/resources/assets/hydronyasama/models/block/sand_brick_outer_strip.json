@@ -1,0 +1,10 @@
+{
+    "parent": "hydronyasama:block/base/outer_strip",
+    "textures": {
+        "bottom": "hydronyasama:block/sand_brick",
+        "top": "hydronyasama:block/sand_brick",
+        "side": "hydronyasama:block/sand_brick"
+    }
+}
+
+
