@@ -1,11 +1,20 @@
+/*
+ * HydroNyaSama - forge-1.20.1
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.forge.content;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import cn.hydcraft.hydronyasama.core.content.ModContent;
 import cn.hydcraft.hydronyasama.core.registry.ContentId;
 import cn.hydcraft.hydronyasama.core.registry.ContentRegistrar;
-import java.util.HashMap;
-import java.util.Map;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -155,4 +164,3 @@ public final class ForgeContentRegistrar implements ContentRegistrar {
         }
     }
 }
-

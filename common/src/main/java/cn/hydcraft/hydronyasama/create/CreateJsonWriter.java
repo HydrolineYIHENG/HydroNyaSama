@@ -1,11 +1,20 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.create;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 public final class CreateJsonWriter {
     private CreateJsonWriter() {

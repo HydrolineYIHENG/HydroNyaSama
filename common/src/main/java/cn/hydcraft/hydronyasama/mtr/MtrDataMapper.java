@@ -1,21 +1,13 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.mtr;
 
-import cn.hydcraft.hydronyasama.mtr.MtrModels.Bounds;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.DepotInfo;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.DimensionOverview;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.FareAreaInfo;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.NodeInfo;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.NodePage;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.PlatformSummary;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.PlatformTimetable;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteDetail;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteNode;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteSummary;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.ScheduleEntry;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.StationInfo;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.StationPlatformInfo;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.StationTimetable;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.TrainStatus;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -35,6 +27,26 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import cn.hydcraft.hydronyasama.mtr.MtrModels.Bounds;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.DepotInfo;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.DimensionOverview;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.FareAreaInfo;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.NodeInfo;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.NodePage;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.PlatformSummary;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.PlatformTimetable;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteDetail;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteNode;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteSummary;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.ScheduleEntry;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.StationInfo;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.StationPlatformInfo;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.StationTimetable;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.TrainStatus;
 import mtr.data.AreaBase;
 import mtr.data.DataCache;
 import mtr.data.Depot;
@@ -49,8 +61,6 @@ import mtr.data.Siding;
 import mtr.data.Station;
 import mtr.data.Train;
 import mtr.data.TrainServer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Helper utilities that convert live MTR data into the DTOs defined under {@link MtrModels}.

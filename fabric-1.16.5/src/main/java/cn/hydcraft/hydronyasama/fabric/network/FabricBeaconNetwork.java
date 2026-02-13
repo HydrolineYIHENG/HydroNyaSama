@@ -1,4 +1,14 @@
+/*
+ * HydroNyaSama - fabric-1.16.5
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.fabric.network;
+
+import java.util.UUID;
 
 import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
 import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
@@ -13,7 +23,6 @@ import cn.hydcraft.hydronyasama.service.BeaconProviderService;
 import cn.hydcraft.hydronyasama.service.BeaconServiceFactory;
 import cn.hydcraft.hydronyasama.transport.ChannelMessageRouter;
 import cn.hydcraft.hydronyasama.transport.ChannelMessenger;
-import java.util.UUID;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;

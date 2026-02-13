@@ -1,3 +1,11 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.mtr;
 
 import java.io.IOException;
@@ -7,14 +15,16 @@ import java.util.Collections;
 import java.util.IdentityHashMap;
 import java.util.Map;
 import java.util.Set;
-import mtr.data.Rail;
-import mtr.data.RailwayData;
-import mtr.data.SignalBlocks;
-import mtr.data.SerializedDataBase;
+
 import org.msgpack.core.MessageBufferPacker;
 import org.msgpack.core.MessagePack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import mtr.data.Rail;
+import mtr.data.RailwayData;
+import mtr.data.SerializedDataBase;
+import mtr.data.SignalBlocks;
 
 /**
  * Serializes the runtime {@link RailwayData} contents into MessagePack so that an external

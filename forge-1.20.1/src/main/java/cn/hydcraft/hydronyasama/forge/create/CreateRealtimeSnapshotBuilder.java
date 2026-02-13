@@ -1,7 +1,18 @@
+/*
+ * HydroNyaSama - forge-1.20.1
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.forge.create;
 
-import cn.hydcraft.hydronyasama.create.CreateEdgeIdFactory;
-import cn.hydcraft.hydronyasama.create.CreateRealtimeSnapshot;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
 import com.simibubi.create.content.trains.RailwaySavedData;
 import com.simibubi.create.content.trains.entity.Carriage;
 import com.simibubi.create.content.trains.entity.CarriageBogey;
@@ -11,10 +22,9 @@ import com.simibubi.create.content.trains.graph.TrackEdge;
 import com.simibubi.create.content.trains.graph.TrackGraph;
 import com.simibubi.create.content.trains.graph.TrackNode;
 import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+
+import cn.hydcraft.hydronyasama.create.CreateEdgeIdFactory;
+import cn.hydcraft.hydronyasama.create.CreateRealtimeSnapshot;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;

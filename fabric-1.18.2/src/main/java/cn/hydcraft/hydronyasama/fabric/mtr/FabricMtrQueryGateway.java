@@ -1,4 +1,22 @@
+/*
+ * HydroNyaSama - fabric-1.18.2
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.fabric.mtr;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import cn.hydcraft.hydronyasama.mtr.MtrDataMapper;
 import cn.hydcraft.hydronyasama.mtr.MtrDimensionSnapshot;
@@ -13,18 +31,10 @@ import cn.hydcraft.hydronyasama.mtr.MtrModels.TrainStatus;
 import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
 import cn.hydcraft.hydronyasama.mtr.MtrRailwayDataAccess;
 import cn.hydcraft.hydronyasama.mtr.MtrSnapshotCache;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
 import mtr.data.RailwayData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class FabricMtrQueryGateway implements MtrQueryGateway {
     private static final Logger LOGGER = LoggerFactory.getLogger(FabricMtrQueryGateway.class);

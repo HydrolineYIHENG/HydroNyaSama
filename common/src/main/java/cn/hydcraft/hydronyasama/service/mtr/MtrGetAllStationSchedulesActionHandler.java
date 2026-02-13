@@ -1,7 +1,25 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.service.mtr;
+
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+
 import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import cn.hydcraft.hydronyasama.mtr.MtrDimensionSnapshot;
 import cn.hydcraft.hydronyasama.mtr.MtrJsonWriter;
@@ -16,16 +34,6 @@ import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
 import cn.hydcraft.hydronyasama.protocol.BeaconMessage;
 import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.transport.TransportContext;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeoutException;
 
 public final class MtrGetAllStationSchedulesActionHandler extends AbstractMtrActionHandler {
     public static final String ACTION = "mtr:get_all_station_schedules";

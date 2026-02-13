@@ -1,7 +1,19 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.service.mtr;
+
+import java.util.Base64;
+import java.util.List;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+
 import cn.hydcraft.hydronyasama.mtr.MtrDimensionSnapshot;
 import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
 import cn.hydcraft.hydronyasama.mtr.RailwayDataSerializer;
@@ -9,8 +21,6 @@ import cn.hydcraft.hydronyasama.protocol.BeaconMessage;
 import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.transport.TransportContext;
 import cn.hydcraft.hydronyasama.util.PayloadChunker;
-import java.util.Base64;
-import java.util.List;
 
 public final class MtrGetRailwaySnapshotActionHandler extends AbstractMtrActionHandler {
     public static final String ACTION = "mtr:get_railway_snapshot";

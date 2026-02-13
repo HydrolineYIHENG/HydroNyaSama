@@ -1,10 +1,13 @@
+/*
+ * HydroNyaSama - forge-1.20.1
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.forge.create;
 
-import cn.hydcraft.hydronyasama.BeaconProviderMod;
-import cn.hydcraft.hydronyasama.create.CreateDatabase;
-import cn.hydcraft.hydronyasama.create.CreateNetworkSnapshot;
-import com.simibubi.create.content.trains.RailwaySavedData;
-import com.simibubi.create.content.trains.graph.TrackGraph;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -14,6 +17,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Supplier;
+
+import com.simibubi.create.content.trains.RailwaySavedData;
+import com.simibubi.create.content.trains.graph.TrackGraph;
+
+import cn.hydcraft.hydronyasama.BeaconProviderMod;
+import cn.hydcraft.hydronyasama.create.CreateDatabase;
+import cn.hydcraft.hydronyasama.create.CreateNetworkSnapshot;
 import net.minecraft.server.MinecraftServer;
 
 final class CreateStaticSnapshotService {

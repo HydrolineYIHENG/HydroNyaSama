@@ -1,19 +1,28 @@
+/*
+ * HydroNyaSama - fabric-1.18.2
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.fabric.network;
 
+import java.util.UUID;
+
+import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
+import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
+import cn.hydcraft.hydronyasama.fabric.mtr.FabricMtrQueryGateway;
 import cn.hydcraft.hydronyasama.gateway.BeaconGatewayManager;
+import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
+import cn.hydcraft.hydronyasama.mtr.MtrQueryRegistry;
+import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.protocol.ChannelConstants;
 import cn.hydcraft.hydronyasama.protocol.MessageSerializer;
-import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.service.BeaconProviderService;
 import cn.hydcraft.hydronyasama.service.BeaconServiceFactory;
 import cn.hydcraft.hydronyasama.transport.ChannelMessageRouter;
 import cn.hydcraft.hydronyasama.transport.ChannelMessenger;
-import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
-import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
-import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
-import cn.hydcraft.hydronyasama.mtr.MtrQueryRegistry;
-import cn.hydcraft.hydronyasama.fabric.mtr.FabricMtrQueryGateway;
-import java.util.UUID;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;

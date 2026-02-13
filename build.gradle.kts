@@ -18,6 +18,7 @@ import org.gradle.api.GradleException
 plugins {
     id("dev.architectury.loom") version "1.6.422" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
+    id("com.diffplug.spotless") version "6.25.0" apply false
     id("base")
 }
 
@@ -221,6 +222,28 @@ fun Project.configureLoaderProject(config: LoaderProject) {
     evaluationDependsOn(":common")
     apply(plugin = "dev.architectury.loom")
     apply(plugin = "com.github.johnrengelman.shadow")
+    apply(plugin = "com.diffplug.spotless")
+
+    // Configure Spotless
+    extensions.configure<com.diffplug.gradle.spotless.SpotlessExtension>("spotless") {
+        java {
+            importOrder("java", "javax", "org", "com", "")
+            removeUnusedImports()
+            target("src/main/java/**/*.java", "src/test/java/**/*.java")
+            licenseHeader(
+                """
+                /*
+                 * HydroNyaSama - ${project.name}
+                 * Copyright (c) 2024 HydroCraft
+                 *
+                 * This Source Code Form is subject to terms of the Mozilla Public
+                 * License, v. 2.0. If a copy of the MPL was not distributed with this
+                 * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+                 */
+                """.trimIndent()
+            )
+        }
+    }
 
     fun sanitizeJar(jarFile: File, removeSqlite: Boolean) {
         val tempFile = File(jarFile.parentFile, "${jarFile.name}.tmp")

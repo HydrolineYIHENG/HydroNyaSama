@@ -1,12 +1,21 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.gateway;
+
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+import java.util.UUID;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import java.nio.charset.StandardCharsets;
-import java.time.Instant;
-import java.util.UUID;
 
 public final class GatewayCodec {
     private static final Gson GSON = new GsonBuilder().disableHtmlEscaping().create();

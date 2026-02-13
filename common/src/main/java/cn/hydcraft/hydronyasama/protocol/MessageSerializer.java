@@ -1,11 +1,20 @@
+/*
+ * HydroNyaSama - common
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.protocol;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 
 /**
  * Helper that converts between byte arrays and the JSON envelopes shared with Bukkit.

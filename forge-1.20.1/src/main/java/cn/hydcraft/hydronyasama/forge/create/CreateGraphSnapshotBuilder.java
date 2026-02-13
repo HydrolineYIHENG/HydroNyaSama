@@ -1,15 +1,13 @@
+/*
+ * HydroNyaSama - forge-1.20.1
+ * Copyright (c) 2024 HydroCraft
+ *
+ * This Source Code Form is subject to terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package cn.hydcraft.hydronyasama.forge.create;
 
-import cn.hydcraft.hydronyasama.create.CreateEdgeIdFactory;
-import cn.hydcraft.hydronyasama.create.CreateNetworkSnapshot;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.station.GlobalStation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -20,6 +18,18 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
+
+import com.simibubi.create.content.trains.graph.EdgeData;
+import com.simibubi.create.content.trains.graph.TrackEdge;
+import com.simibubi.create.content.trains.graph.TrackGraph;
+import com.simibubi.create.content.trains.graph.TrackNode;
+import com.simibubi.create.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create.content.trains.signal.SignalBoundary;
+import com.simibubi.create.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create.content.trains.station.GlobalStation;
+
+import cn.hydcraft.hydronyasama.create.CreateEdgeIdFactory;
+import cn.hydcraft.hydronyasama.create.CreateNetworkSnapshot;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
