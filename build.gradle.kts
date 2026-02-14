@@ -189,9 +189,10 @@ subprojects {
     }
 }
 
-loaderProjects.forEach { loaderProject ->
-    project(":${loaderProject.name}") {
-        configureLoaderProject(loaderProject)
+subprojects {
+    val loaderConfig = loaderProjects.firstOrNull { it.name == name }
+    if (loaderConfig != null) {
+        configureLoaderProject(loaderConfig)
     }
 }
 

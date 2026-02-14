@@ -104,14 +104,14 @@ public final class BuildingContent {
     }
 
     private static void registerCube(ContentRegistrar registrar, String idPath, String material, String texture) {
-        String prefix = idPath;
-        if (prefix.endsWith("_block")) {
-            prefix = prefix.substring(0, prefix.length() - 6);
-        }
+        String prefix = idPath.endsWith("_block")
+                ? idPath.substring(0, idPath.length() - 6)
+                : idPath;
         ContentId baseBlockId = ContentId.of("hydronyasama", prefix + "_block");
+
         registrar.registerBlock(new ContentRegistrar.BlockDefinition(
-                id,
                 baseBlockId,
+                GROUP,
                 "cube",
                 material,
                 texture,
@@ -119,40 +119,47 @@ public final class BuildingContent {
                 null
         ));
         registrar.registerItem(new ContentRegistrar.ItemDefinition(
-                id,
                 baseBlockId,
+                GROUP,
                 "block_item",
-                id
                 baseBlockId
+        ));
 
-        // Register variants
-        registerVariant(registrar, id, material, texture, "carpet", "carpet");
-        ContentId baseVariantId = ContentId.of("hydronyasama", prefix);
-        registerVariant(registrar, baseVariantId, material, texture, "carpet", "carpet", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "edge", "edge", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "railing", "railing", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "roof", "roof", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "fence", "fence", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "fence_gate", "fence_gate", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "pane", "pane", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "slab", "slab", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "stairs", "stairs", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "strip", "strip", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "vslab", "vslab", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "vstrip", "vstrip", baseBlockId);
-        registerVariant(registrar, baseVariantId, material, texture, "wall", "wall", baseBlockId);
+        ContentId prefixId = ContentId.of("hydronyasama", prefix);
+        registerVariant(registrar, prefixId, material, texture, "carpet", "carpet", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "edge", "edge", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "railing", "railing", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "roof", "roof", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "fence", "fence", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "fence_gate", "fence_gate", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "pane", "pane", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "slab", "slab", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "stairs", "stairs", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "strip", "strip", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "vslab", "vslab", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "vstrip", "vstrip", baseBlockId);
+        registerVariant(registrar, prefixId, material, texture, "wall", "wall", baseBlockId);
+    }
 
-    private static void registerVariant(ContentRegistrar registrar, ContentId baseId, String material, String texture, String suffix, String kind) {
-    private static void registerVariant(ContentRegistrar registrar, ContentId prefixId, String material, String texture, String suffix, String kind, ContentId baseBlockId) {
+    private static void registerVariant(
+            ContentRegistrar registrar,
+            ContentId prefixId,
+            String material,
+            String texture,
+            String suffix,
+            String kind,
+            ContentId baseBlockId
+    ) {
         ContentId id = ContentId.of(prefixId.namespace(), prefixId.path() + "_" + suffix);
+        registrar.registerBlock(new ContentRegistrar.BlockDefinition(
                 id,
                 GROUP,
                 kind,
                 material,
                 texture,
                 0,
-                baseId
                 baseBlockId
+        ));
         registrar.registerItem(new ContentRegistrar.ItemDefinition(
                 id,
                 GROUP,
