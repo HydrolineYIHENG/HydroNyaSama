@@ -1,15 +1,4 @@
-/*
- * HydroNyaSama - forge-1.16.5
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.forge.network;
-
-import java.util.NoSuchElementException;
-import java.util.UUID;
 
 import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
 import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
@@ -29,6 +18,8 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.SimpleChannelInboundHandler;
+import java.util.NoSuchElementException;
+import java.util.UUID;
 import net.minecraft.network.Connection;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket;
@@ -39,10 +30,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.event.server.FMLServerStartedEvent;
 import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.network.ICustomPacket;
 
 /**

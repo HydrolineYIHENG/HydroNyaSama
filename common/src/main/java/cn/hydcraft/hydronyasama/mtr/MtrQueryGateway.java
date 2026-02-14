@@ -1,25 +1,16 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.mtr;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-
-import cn.hydcraft.hydronyasama.mtr.MtrModels.DepotInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.DimensionOverview;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.FareAreaInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.NodePage;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.RouteDetail;
-import cn.hydcraft.hydronyasama.mtr.MtrModels.StationInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.StationTimetable;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.StationInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.TrainStatus;
+import cn.hydcraft.hydronyasama.mtr.MtrModels.DepotInfo;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * Loader-side service that knows how to fetch MTR data for the current Minecraft server.

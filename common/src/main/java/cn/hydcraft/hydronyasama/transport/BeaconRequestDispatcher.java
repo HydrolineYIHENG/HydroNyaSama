@@ -1,25 +1,14 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.transport;
 
-import java.util.Objects;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.google.gson.JsonParseException;
-
 import cn.hydcraft.hydronyasama.protocol.BeaconMessage;
 import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.protocol.MessageSerializer;
 import cn.hydcraft.hydronyasama.protocol.ResultCode;
 import cn.hydcraft.hydronyasama.service.BeaconProviderService;
+import java.util.Objects;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Parses Beacon messages and delegates to {@link BeaconProviderService}.

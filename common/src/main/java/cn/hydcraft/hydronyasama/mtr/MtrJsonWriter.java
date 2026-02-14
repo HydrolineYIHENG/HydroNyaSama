@@ -1,19 +1,7 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.mtr;
-
-import java.util.List;
-import java.util.Map;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-
 import cn.hydcraft.hydronyasama.mtr.MtrModels.Bounds;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.DepotInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.DimensionOverview;
@@ -30,6 +18,8 @@ import cn.hydcraft.hydronyasama.mtr.MtrModels.StationInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.StationPlatformInfo;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.StationTimetable;
 import cn.hydcraft.hydronyasama.mtr.MtrModels.TrainStatus;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Converts DTOs into the JSON schema expected by Bukkit / website callers.

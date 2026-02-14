@@ -1,13 +1,6 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.service.mtr;
 
+import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
@@ -19,8 +12,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import cn.hydcraft.hydronyasama.BeaconProviderMod;
 
 /**
  * Serializes heavy schedule requests so we only run one at a time and keep a fixed delay between them.

@@ -1,21 +1,6 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.gateway;
 
-import java.net.InetSocketAddress;
-import java.nio.charset.StandardCharsets;
-import java.time.Instant;
-import java.util.UUID;
-import java.util.concurrent.TimeUnit;
-
 import com.google.gson.JsonObject;
-
 import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.protocol.ChannelConstants;
@@ -39,6 +24,11 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.handler.timeout.IdleStateHandler;
+import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 public final class GatewayServer implements AutoCloseable {
     private final GatewayConfig config;

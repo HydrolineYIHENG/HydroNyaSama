@@ -1,13 +1,10 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.gateway;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
@@ -16,13 +13,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
-
-import cn.hydcraft.hydronyasama.BeaconProviderMod;
 
 public final class GatewayConfigLoader {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();

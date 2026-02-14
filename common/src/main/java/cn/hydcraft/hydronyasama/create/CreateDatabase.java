@@ -1,13 +1,6 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.create;
 
+import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.Connection;
@@ -23,8 +16,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import cn.hydcraft.hydronyasama.BeaconProviderMod;
 
 public final class CreateDatabase implements AutoCloseable {
     private final Path dbPath;

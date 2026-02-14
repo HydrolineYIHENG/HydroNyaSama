@@ -4,7 +4,6 @@ import org.gradle.jvm.toolchain.JavaLanguageVersion
 
 plugins {
     `java-library`
-    id("com.diffplug.spotless")
 }
 
 val architecturyVersion: String by rootProject
@@ -37,24 +36,4 @@ java {
 tasks.withType<JavaCompile>().configureEach {
     options.encoding = "UTF-8"
     options.release.set(8)
-}
-
-spotless {
-    java {
-        importOrder("java", "javax", "org", "com", "")
-        removeUnusedImports()
-        target("src/main/java/**/*.java", "src/test/java/**/*.java")
-        licenseHeader(
-            """
-            /*
-             * HydroNyaSama - ${project.name}
-             * Copyright (c) 2024 HydroCraft
-             *
-             * This Source Code Form is subject to the terms of the Mozilla Public
-             * License, v. 2.0. If a copy of the MPL was not distributed with this
-             * file, You can obtain one at https://mozilla.org/MPL/2.0/.
-             */
-            """.trimIndent()
-        )
-    }
 }

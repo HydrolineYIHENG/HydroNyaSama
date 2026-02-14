@@ -1,13 +1,7 @@
-/*
- * HydroNyaSama - forge-1.20.1
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.forge.create;
 
+import cn.hydcraft.hydronyasama.BeaconProviderMod;
+import cn.hydcraft.hydronyasama.create.CreateRealtimeSnapshot;
 import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -16,9 +10,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import cn.hydcraft.hydronyasama.BeaconProviderMod;
-import cn.hydcraft.hydronyasama.create.CreateRealtimeSnapshot;
 import net.minecraft.server.MinecraftServer;
 
 final class CreateRealtimeChannel {

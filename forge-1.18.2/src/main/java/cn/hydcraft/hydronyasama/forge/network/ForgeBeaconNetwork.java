@@ -1,22 +1,6 @@
-/*
- * HydroNyaSama - forge-1.18.2
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.forge.network;
 
-import java.util.NoSuchElementException;
-import java.util.UUID;
-
-import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
-import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
-import cn.hydcraft.hydronyasama.forge.mtr.ForgeMtrQueryGateway;
 import cn.hydcraft.hydronyasama.gateway.BeaconGatewayManager;
-import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
-import cn.hydcraft.hydronyasama.mtr.MtrQueryRegistry;
 import cn.hydcraft.hydronyasama.protocol.BeaconResponse;
 import cn.hydcraft.hydronyasama.protocol.ChannelConstants;
 import cn.hydcraft.hydronyasama.protocol.MessageSerializer;
@@ -24,11 +8,18 @@ import cn.hydcraft.hydronyasama.service.BeaconProviderService;
 import cn.hydcraft.hydronyasama.service.BeaconServiceFactory;
 import cn.hydcraft.hydronyasama.transport.ChannelMessageRouter;
 import cn.hydcraft.hydronyasama.transport.ChannelMessenger;
+import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
+import cn.hydcraft.hydronyasama.create.CreateQueryRegistry;
+import cn.hydcraft.hydronyasama.mtr.MtrQueryGateway;
+import cn.hydcraft.hydronyasama.mtr.MtrQueryRegistry;
+import cn.hydcraft.hydronyasama.forge.mtr.ForgeMtrQueryGateway;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.SimpleChannelInboundHandler;
+import java.util.NoSuchElementException;
+import java.util.UUID;
 import net.minecraft.network.Connection;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket;
@@ -41,9 +32,9 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.event.server.ServerStoppedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.network.ICustomPacket;
+import net.minecraftforge.fml.ModList;
 
 /**
  * Forge adapter that keeps vanilla custom payloads wired into the shared beacon router.

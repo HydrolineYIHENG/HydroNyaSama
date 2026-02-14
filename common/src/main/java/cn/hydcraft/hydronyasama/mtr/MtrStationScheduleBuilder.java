@@ -1,27 +1,17 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.mtr;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
 import mtr.data.DataCache;
 import mtr.data.Platform;
-import mtr.data.RailwayData;
 import mtr.data.Route;
+import mtr.data.RailwayData;
 import mtr.data.ScheduleEntry;
 import mtr.data.Station;
 

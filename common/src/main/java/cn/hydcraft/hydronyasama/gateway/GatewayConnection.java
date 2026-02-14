@@ -1,21 +1,11 @@
-/*
- * HydroNyaSama - common
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.gateway;
 
+import com.google.gson.JsonObject;
+import io.netty.channel.Channel;
 import java.net.SocketAddress;
 import java.util.UUID;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
-import com.google.gson.JsonObject;
-
-import io.netty.channel.Channel;
 
 final class GatewayConnection {
     private final Channel channel;

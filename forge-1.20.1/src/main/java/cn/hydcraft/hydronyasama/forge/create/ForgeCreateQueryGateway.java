@@ -1,23 +1,14 @@
-/*
- * HydroNyaSama - forge-1.20.1
- * Copyright (c) 2024 HydroCraft
- *
- * This Source Code Form is subject to terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
 package cn.hydcraft.hydronyasama.forge.create;
-
-import java.nio.file.Path;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.function.Supplier;
 
 import cn.hydcraft.hydronyasama.BeaconProviderMod;
 import cn.hydcraft.hydronyasama.create.CreateDatabase;
 import cn.hydcraft.hydronyasama.create.CreateNetworkSnapshot;
 import cn.hydcraft.hydronyasama.create.CreateQueryGateway;
 import cn.hydcraft.hydronyasama.create.CreateRealtimeSnapshot;
+import java.nio.file.Path;
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Supplier;
 import net.minecraft.server.MinecraftServer;
 
 public final class ForgeCreateQueryGateway implements CreateQueryGateway {
